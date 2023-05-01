@@ -125,7 +125,7 @@ def make_launcher(app, container, bindir,
 
     ## paths
     launcher_path = '{}/{}'.format(bindir, app)
-
+    print('CONTAINER', container)
     ## scripts --> use absolute path for wrapper path inside launcher
     launcher = _LAUNCHER.format(container=container, 
                                 bind=bind,
